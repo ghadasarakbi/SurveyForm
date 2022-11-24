@@ -1,0 +1,67 @@
+h1{
+    color: rgb(246, 244, 244);
+    font-size:20px;
+}
+#title{
+    color: rgb(12, 9, 16);
+    text-align: center;
+    font-size: 50px;
+  }
+  .text-danger{
+    font-family: Perpetua;
+    text-decoration: underline;
+    font-weight: bold;
+    color:#ECC1A1;
+  }
+
+  body{
+    background-color:rgb(218, 200, 190);
+    background-repeat: no-repeat;
+    background-size:cover;
+    font-size:15px;
+    font-family: "Goudy Old Style",Times, serif;
+    font-weight: 900;
+    line-height: 1.4;
+  }
+  div {
+  color: rgb(246, 244, 244);
+  font-size:20px;
+  }
+  .blah{
+    background-color:rgb(88, 98, 108);
+    box-shadow: 20px 20px 50px 15px black;
+    padding: 2.5rem;
+    display: block;
+    width:550px;
+    max-width:550px;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 2px;
+
+  }
+
+  #submit{
+    text-align: center;
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    background-color: 	rgb(245, 241, 238);
+    color:black;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: "Goudy Old Style",Times, serif;
+    font-weight: 900;
+    cursor: pointer;
+
+  }
+  .vax{
+    min-height: 120px;
+      width: 100%;
+      padding: 0.625rem;
+      resize: vertical;
+      margin: 0 auto 1.25rem auto;
+      font-family: "Goudy Old Style",Times, serif;
+
+  }

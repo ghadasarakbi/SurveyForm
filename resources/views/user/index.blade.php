@@ -49,7 +49,11 @@
             <td>{{ $row->age }}</td>
             <td>{{ $row->roles }}</td>
             <td>{{ $row->recommend }}</td>
-            <td>{{ $row->options }}</td>
+            <td>
+                @foreach ($row->options as $option)
+                    {{ $option }},
+                @endforeach
+            </td>
             <td>{{ $row->comment }}</td>
 
             <td>

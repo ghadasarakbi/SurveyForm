@@ -1,11 +1,18 @@
 @extends('layouts.master')
 @section('content')
+
+    <div>
+        <a href="{{ route('user.index') }}" class="view ">View All</a>
+    </div>
+
 <form class="blah">
+
 <div class="card-header">
+
 		<div class="row">
-			<div class="col col-md-6"><b>User Info</b></div>
+			<div class="col col-md-6"><b>User Info:</b></div>
 			<div class="col col-md-6">
-				<a href="{{ route('user.index') }}" class="btn btn-primary btn-sm ">View All</a>
+
 			</div>
 		</div>
 	</div>
@@ -44,12 +51,15 @@
 				{{ $user->recommend }}
 
 		</div>
+
         <div class="row mb-4">
-			<label class="col-sm-2 col-label-form"><b>Option:</b></label>
+			<label class="col-sm-2 col-label-form"><b>Options:</b></label>
 
-				{{ $user->options }}
-
+				  @foreach ($user->options as $option)
+                  {{ $option }},
+                  @endforeach
 		</div>
+
         <div class="row mb-4">
 			<label class="col-sm-2 col-label-form"><b>Comment:</b></label>
 

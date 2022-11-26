@@ -14,6 +14,7 @@ class UsersController extends Controller
 
         return view('user.index', compact('user'))
         ->with('i', (request()->input('page', 1) - 1) * 7);
+        return view('index')->with('users', $user);
     }
 
     public function create()
@@ -42,20 +43,22 @@ class UsersController extends Controller
 
     public function show(User $user)
     {
-        return 4;
+
         return view('user.show',compact('user'));
+        return view('index')->with('users', $user);
     }
 
     public function edit(User $user)
     {
 
-            return 5;
             return view('user.edit',compact('user'));
+            return view('index')->with('users', $user);
+
     }
 
     public function update(Request $request,User $user)
     {
-        return 6;
+
         $request->validate([
             'Name' => 'alpha|min:3',
             'email' => 'email'

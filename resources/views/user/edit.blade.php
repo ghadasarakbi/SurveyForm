@@ -12,11 +12,11 @@
       </div><br />
     @endif
     <div class="col-md-12 text-end mt-4">
-        <a class="btn btn-primary" href="{{ route('user.index') }}">Back</a>
+        <a class="view" href="{{ route('user.index') }}">Back</a>
     </div>
-<form class ="blah" method="POST" action="{{ route('user.update',$user->id) }}" >
+<form class ="blah" method="GET" action="{{ route('user.edit',$user->id) }}" >
     @csrf
-    @method('PUT')
+    @method('GET')
 
     <h1 id="title">Update Form</h1>
         <div>

@@ -1,6 +1,16 @@
 @extends('layouts.master')
 @section('content')
 
+<div class="card">
+	<div class="card-header">
+		<div class="row">
+			<div class="col col-md-6"></div>
+			<div class="col col-md-6">
+<a href="{{ route('user.index') }}" class="view">View List</a>
+			</div>
+		</div>
+	</div>
+
   @if(Session::has('success'))
   <div class="alert alert-success">
       {{ Session::get('success') }}

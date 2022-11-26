@@ -56,6 +56,13 @@ h1{
     cursor: pointer;
 
   }
+  .view{
+    color:rgb(88, 98, 108);
+    background-color:rgb(245, 241, 238);
+    padding: 0.5rem;
+    border-radius: 5px;
+    border-color:#050202;
+    }
   .vax{
     min-height: 120px;
       width: 100%;

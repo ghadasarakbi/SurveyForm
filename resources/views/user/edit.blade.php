@@ -62,24 +62,25 @@
 
     <div>
       <p>What would you like to see improved? (Check all that apply) </p>
-      <input type="checkbox" name="options[]" value="Front-end Projects" {{ $user->options == "Front-end Projects" ? 'checked' : '' }}>Front-end Projects
+      @foreach ($user->options as $option )
+      <input type="checkbox" name="options[]" value="Front-end Projects" {{ $option == "Front-end Projects" ? 'checked' : '' }}>Front-end Projects
       <br>
-      <input type="checkbox" name="options[]" value="Back-end Projects" {{ $user->options == "Back-end Projects" ? 'checked' : '' }}>Back-end Projects
+      <input type="checkbox" name="options[]" value="Back-end Projects" {{ $option == "Back-end Projects" ? 'checked' : '' }}>Back-end Projects
       <br>
-      <input type="checkbox" name="options[]" value="Data Visualization" {{ $user->options == "Data Visualization" ? 'checked' : '' }}>Data Visualization
+      <input type="checkbox" name="options[]" value="Data Visualization" {{ $option == "Data Visualization" ? 'checked' : '' }}>Data Visualization
       <br>
-      <input type="checkbox" name="options[]" value="Challenges" {{ $user->options == "Challenges" ? 'checked' : '' }}>Challenges
+      <input type="checkbox" name="options[]" value="Challenges" {{ $option == "Challenges" ? 'checked' : '' }}>Challenges
       <br>
-      <input type="checkbox" name="options[]" value="Open Source Community" {{ $user->options == "Open Source Community" ? 'checked' : '' }}>Open Source Community
+      <input type="checkbox" name="options[]" value="Open Source Community" {{ $option == "Open Source Community" ? 'checked' : '' }}>Open Source Community
       <br>
-      <input type="checkbox" name="options[]" value="Gitter help rooms" {{ $user->options == "Gitter help rooms" ? 'checked' : '' }}>Gitter help rooms
+      <input type="checkbox" name="options[]" value="Gitter help rooms" {{ $option == "Gitter help rooms" ? 'checked' : '' }}>Gitter help rooms
       <br>
-      <input type="checkbox" name="options[]" value="Videos" {{ $user->options == "Videos" ? 'checked' : '' }}>Videos<br>
-      <input type="checkbox" name="options[]" value="City Meetups" {{ $user->options == "City Meetups" ? 'checked' : '' }}>City Meetups<br>
-      <input type="checkbox" name="options[]" value="Wiki" {{ $user->options == "Wiki" ? 'checked' : '' }}>Wiki<br>
-      <input type="checkbox" name="options[]" value="Forum" {{ $user->options == "Forum" ? 'checked' : '' }}>Forum<br>
-      <input type="checkbox" name="options[]" value="Additional Courses" {{ $user->options == "Additional Courses" ? 'checked' : '' }}>Additional Courses<br>
-
+      <input type="checkbox" name="options[]" value="Videos" {{ $option == "Videos" ? 'checked' : '' }}>Videos<br>
+      <input type="checkbox" name="options[]" value="City Meetups" {{ $option == "City Meetups" ? 'checked' : '' }}>City Meetups<br>
+      <input type="checkbox" name="options[]" value="Wiki" {{ $option == "Wiki" ? 'checked' : '' }}>Wiki<br>
+      <input type="checkbox" name="options[]" value="Forum" {{ $option == "Forum" ? 'checked' : '' }}>Forum<br>
+      <input type="checkbox" name="options[]" value="Additional Courses" {{ $option == "Additional Courses" ? 'checked' : '' }}>Additional Courses<br>
+    @endforeach
 
     </div>
 
